@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var score = 0
 
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -33,6 +34,9 @@ struct ContentView: View {
                             Text(word)
                         }
                     }
+                } header: {
+                    Text("Score : \(score)")
+                        .font(.headline.weight(.bold))
                 }
             }
             .navigationTitle(rootWord)
@@ -43,10 +47,17 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage)
             }
+            .toolbar {
+                Button("Reset", action: startGame)
+            }
         }
     }
 
     func startGame() {
+        usedWords = []
+        newWord = ""
+        score = 0
+
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
@@ -63,6 +74,16 @@ struct ContentView: View {
 
         // exit if the remaining string is empty
         guard answer.count > 0 else { return }
+
+        guard answer != rootWord else {
+            wordError(title: "The answer is same as root word", message: "You can't use same word")
+            return
+        }
+
+        guard answer.count >= 3 else {
+            wordError(title: "Word is too short", message: "Type longer than 2 letters")
+            return
+        }
 
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
@@ -83,6 +104,7 @@ struct ContentView: View {
             usedWords.insert(answer, at: 0)
         }
         newWord = ""
+        score = usedWords.joined().count
     }
 
     func isOriginal(word: String) -> Bool {

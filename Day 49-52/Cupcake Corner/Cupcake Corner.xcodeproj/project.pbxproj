@@ -11,10 +11,9 @@
 		236483CE296A4B78003D9498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483CD296A4B78003D9498 /* ContentView.swift */; };
 		236483D0296A4B7A003D9498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236483CF296A4B7A003D9498 /* Assets.xcassets */; };
 		236483D4296A4B7A003D9498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236483D3296A4B7A003D9498 /* Preview Assets.xcassets */; };
-		236483DB296A4BE1003D9498 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483DA296A4BE1003D9498 /* User.swift */; };
-		236483DD296A4DCD003D9498 /* AppleiTunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483DC296A4DCD003D9498 /* AppleiTunesListView.swift */; };
-		236483DF296A501E003D9498 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483DE296A501E003D9498 /* AsyncImageView.swift */; };
-		236483E1296A51A5003D9498 /* ValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483E0296A51A5003D9498 /* ValidationView.swift */; };
+		236483E3296A53C6003D9498 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483E2296A53C6003D9498 /* Order.swift */; };
+		236483E5296A55CA003D9498 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483E4296A55CA003D9498 /* AddressView.swift */; };
+		236483E7296A566C003D9498 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236483E6296A566C003D9498 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +23,9 @@
 		236483CF296A4B7A003D9498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236483D1296A4B7A003D9498 /* Cupcake_Corner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cupcake_Corner.entitlements; sourceTree = "<group>"; };
 		236483D3296A4B7A003D9498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		236483DA296A4BE1003D9498 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		236483DC296A4DCD003D9498 /* AppleiTunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleiTunesListView.swift; sourceTree = "<group>"; };
-		236483DE296A501E003D9498 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
-		236483E0296A51A5003D9498 /* ValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationView.swift; sourceTree = "<group>"; };
+		236483E2296A53C6003D9498 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		236483E4296A55CA003D9498 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		236483E6296A566C003D9498 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +60,9 @@
 			children = (
 				236483CB296A4B78003D9498 /* Cupcake_CornerApp.swift */,
 				236483CD296A4B78003D9498 /* ContentView.swift */,
-				236483DA296A4BE1003D9498 /* User.swift */,
-				236483DC296A4DCD003D9498 /* AppleiTunesListView.swift */,
-				236483DE296A501E003D9498 /* AsyncImageView.swift */,
-				236483E0296A51A5003D9498 /* ValidationView.swift */,
+				236483E2296A53C6003D9498 /* Order.swift */,
+				236483E4296A55CA003D9498 /* AddressView.swift */,
+				236483E6296A566C003D9498 /* CheckoutView.swift */,
 				236483CF296A4B7A003D9498 /* Assets.xcassets */,
 				236483D1296A4B7A003D9498 /* Cupcake_Corner.entitlements */,
 				236483D2296A4B7A003D9498 /* Preview Content */,
@@ -151,12 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236483E3296A53C6003D9498 /* Order.swift in Sources */,
+				236483E5296A55CA003D9498 /* AddressView.swift in Sources */,
+				236483E7296A566C003D9498 /* CheckoutView.swift in Sources */,
 				236483CE296A4B78003D9498 /* ContentView.swift in Sources */,
-				236483DD296A4DCD003D9498 /* AppleiTunesListView.swift in Sources */,
 				236483CC296A4B78003D9498 /* Cupcake_CornerApp.swift in Sources */,
-				236483E1296A51A5003D9498 /* ValidationView.swift in Sources */,
-				236483DF296A501E003D9498 /* AsyncImageView.swift in Sources */,
-				236483DB296A4BE1003D9498 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

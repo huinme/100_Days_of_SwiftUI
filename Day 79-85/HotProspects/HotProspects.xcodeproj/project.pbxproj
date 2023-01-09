@@ -12,6 +12,9 @@
 		234E2084296B944900AA48E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E2083296B944900AA48E8 /* Assets.xcassets */; };
 		234E2088296B944900AA48E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E2087296B944900AA48E8 /* Preview Assets.xcassets */; };
 		234E2090296BA20700AA48E8 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 234E208F296BA20700AA48E8 /* SamplePackage */; };
+		234E2092296BA2E700AA48E8 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E2091296BA2E700AA48E8 /* ProspectsView.swift */; };
+		234E2094296BA2EE00AA48E8 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E2093296BA2EE00AA48E8 /* MeView.swift */; };
+		234E2096296BA4AF00AA48E8 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E2095296BA4AF00AA48E8 /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		234E2083296B944900AA48E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234E2085296B944900AA48E8 /* HotProspects.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HotProspects.entitlements; sourceTree = "<group>"; };
 		234E2087296B944900AA48E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		234E2091296BA2E700AA48E8 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		234E2093296BA2EE00AA48E8 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		234E2095296BA4AF00AA48E8 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				234E207F296B944800AA48E8 /* HotProspectsApp.swift */,
+				234E2095296BA4AF00AA48E8 /* Prospect.swift */,
 				234E2081296B944800AA48E8 /* ContentView.swift */,
+				234E2091296BA2E700AA48E8 /* ProspectsView.swift */,
+				234E2093296BA2EE00AA48E8 /* MeView.swift */,
 				234E2083296B944900AA48E8 /* Assets.xcassets */,
 				234E2085296B944900AA48E8 /* HotProspects.entitlements */,
 				234E2086296B944900AA48E8 /* Preview Content */,
@@ -147,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234E2094296BA2EE00AA48E8 /* MeView.swift in Sources */,
+				234E2096296BA4AF00AA48E8 /* Prospect.swift in Sources */,
+				234E2092296BA2E700AA48E8 /* ProspectsView.swift in Sources */,
 				234E2082296B944800AA48E8 /* ContentView.swift in Sources */,
 				234E2080296B944800AA48E8 /* HotProspectsApp.swift in Sources */,
 			);

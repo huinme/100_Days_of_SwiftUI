@@ -11,6 +11,8 @@
 		234E20AB296BB0E600AA48E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E20AA296BB0E600AA48E8 /* ContentView.swift */; };
 		234E20AD296BB0E700AA48E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E20AC296BB0E700AA48E8 /* Assets.xcassets */; };
 		234E20B1296BB0E700AA48E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E20B0296BB0E700AA48E8 /* Preview Assets.xcassets */; };
+		23D81078296BBCA3003C23AA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D81077296BBCA3003C23AA /* Card.swift */; };
+		23D8107A296BBCF9003C23AA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D81079296BBCF9003C23AA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		234E20AC296BB0E700AA48E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234E20AE296BB0E700AA48E8 /* Flashzilla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flashzilla.entitlements; sourceTree = "<group>"; };
 		234E20B0296BB0E700AA48E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23D81077296BBCA3003C23AA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		23D81079296BBCF9003C23AA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				234E20A8296BB0E600AA48E8 /* FlashzillaApp.swift */,
 				234E20AA296BB0E600AA48E8 /* ContentView.swift */,
+				23D81077296BBCA3003C23AA /* Card.swift */,
+				23D81079296BBCF9003C23AA /* CardView.swift */,
 				234E20AC296BB0E700AA48E8 /* Assets.xcassets */,
 				234E20AE296BB0E700AA48E8 /* Flashzilla.entitlements */,
 				234E20AF296BB0E700AA48E8 /* Preview Content */,
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				234E20AB296BB0E600AA48E8 /* ContentView.swift in Sources */,
+				23D81078296BBCA3003C23AA /* Card.swift in Sources */,
+				23D8107A296BBCF9003C23AA /* CardView.swift in Sources */,
 				234E20A9296BB0E600AA48E8 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,8 +285,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -287,10 +295,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.huin.apps.Flashzilla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,8 +325,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -325,10 +335,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.huin.apps.Flashzilla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
